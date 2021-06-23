@@ -69,7 +69,7 @@ section.home {
     right: 0;
     width: 60px;
     height: 60px;
-    background: var(--primary-color) url(../img/menu.png);
+    background: var(--primary-color) url(./images/menu.png);
     z-index: 20;
     background-size: 30px;
     background-position: center;
@@ -79,7 +79,7 @@ section.home {
 }
 
 .toggle.active {
-    background: var(--primary-color) url(../img/close.png);
+    background: var(--primary-color) url(../images/close.png);
     background-size: 25px;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,22 +157,18 @@ section.home {
 
 .services .service {
     padding: 30px;
-    background: #f4f4f4;
+    
 }
 
 .services .service:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .services .service h2 {
     font-size: 24px;
-    font-weight: 500;
-    margin-top: 20px;
-    color: #1b206e;
+  font-weight: 500;
+  margin-top: 20px;
+  color: var(--secondary-color);
 }
 
 .services .service .icon img {
@@ -288,5 +284,9 @@ section.home {
 @media(max-width:768px) {
     .services {
         grid-template-columns: 1fr;
-    }
+      }
+    
+      .services .service {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
 }
